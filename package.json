@@ -28,7 +28,7 @@
     "yarn"
   ],
   "author": "Moovweb",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "preferGlobal": true,
   "bin": {
     "create-react-storefront": "./index.js"
