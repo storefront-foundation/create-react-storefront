@@ -17,15 +17,7 @@
     "type": "git"
   },
   "keywords": [
-    "moovweb",
-    "node",
-    "web",
-    "html",
-    "transformation",
-    "service",
-    "builder",
-    "assets",
-    "yarn"
+    "react-storefront"
   ],
   "author": "Moovweb",
   "license": "Apache-2.0",
@@ -35,6 +27,24 @@
   },
   "scripts": {
     "start": "node .",
-    "release": "yarn publish"
+    "release": "yarn publish",
+    "precommit": "lint-staged",
+    "prettier": "prettier --write \"**/*.js\" \"!{node_modules,.next,.yalc}/**\""
+  },
+  "devDependencies": {
+    "husky": "^4.0.10",
+    "lint-staged": "^10.0.0",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run prettier",
+      "git add ."
+    ]
   }
 }
