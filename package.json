@@ -27,6 +27,23 @@
   },
   "scripts": {
     "start": "node .",
-    "release": "yarn publish"
+    "release": "yarn publish",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "husky": "^4.0.10",
+    "lint-staged": "^10.0.0",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run prettier",
+      "git add ."
+    ]
   }
 }
