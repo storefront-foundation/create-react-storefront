@@ -47,7 +47,7 @@ const argv = require('yargs')
   .version(
     true,
     'Display the create-react-storefront version and exit',
-    `create-react-storefront v${getPackageJsonVersion()}`,
+    `create-react-storefront v${getPackageJsonVersion()}`
   )
   .command('$0 <app-name>', 'Creates a new React Storefront app.', yargs => {
     const returnedYargs = yargs
