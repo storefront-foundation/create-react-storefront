@@ -17,15 +17,7 @@
     "type": "git"
   },
   "keywords": [
-    "moovweb",
-    "node",
-    "web",
-    "html",
-    "transformation",
-    "service",
-    "builder",
-    "assets",
-    "yarn"
+    "react-storefront"
   ],
   "author": "Moovweb",
   "license": "Apache-2.0",

@@ -47,27 +47,20 @@ const argv = require('yargs')
   .version(
     true,
     'Display the create-react-storefront version and exit',
-    `create-react-storefront v${getPackageJsonVersion()}`
+    `create-react-storefront v${getPackageJsonVersion()}`,
   )
   .command('$0 <app-name>', 'Creates a new React Storefront app.', yargs => {
     const returnedYargs = yargs
       .positional('app-name', {
         describe: 'A name for the new app',
-        type: 'string'
+        type: 'string',
       })
       .option('yes', {
         describe: 'Run in non-interactive mode, accepting all defaults.',
         default: false,
-        type: 'boolean'
+        type: 'boolean',
       })
       .alias('yes', 'y')
-      .option('branch', {
-        describe:
-          'Use a specific branch from react-storefront-starter-app as the app template (defaults to master). Example: --branch=commercial',
-        default: 'master',
-        type: 'string'
-      })
-      .alias('branch', 'b')
       .help()
       .alias('help', 'h')
       .wrap(yargs.terminalWidth())
