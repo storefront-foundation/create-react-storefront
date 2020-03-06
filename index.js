@@ -9,7 +9,7 @@ const getPackageJsonVersion = () => {
 }
 
 // yargs has a bug where it cannot properly validate arguments
-// that have a hypen in them. So --invalid be flagged by Yargs
+// that have a hyphen in them. So --invalid be flagged by Yargs
 // as invalid, but --invalid-arg is allowed with no errors.
 // This patch validates all of the -- args against the list
 // of valid args.
