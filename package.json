@@ -10,7 +10,7 @@
     "lodash": "^4.17.11",
     "ora": "^3.4.0",
     "prompts": "^1.1.0",
-    "url-exists": "^1.0.3",
+    "url-exist": "^1.1.1",
     "yargs": "^12.0.2"
   },
   "repository": {
