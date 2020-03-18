@@ -6,6 +6,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "decompress": "^4.2.0",
+    "del": "^5.1.0",
     "download": "^7.1.0",
     "fs-extra": "^8.1.0",
     "lodash": "^4.17.11",
